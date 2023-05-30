@@ -29,7 +29,6 @@ Fire management agencies, administrators, and other personnel responsible for al
   - [Final Features](#final-features)
 ##
 ### Target
-
   - FireMgmtComplexity (Defined [here](#final-features))
 ##### Factors contributing to the fire management complexity level:
   - Area involved
@@ -59,7 +58,7 @@ The data used in this project comes from the following sources below:
   - Contains historical data for around 3k RAWS 
 - Elevation data:
   - open elevation api 
-
+##
 ### Data Directory 
 | Data | Curation | Utilization | Additional Info |
 |----------|----------|----------|----------------|
@@ -74,6 +73,7 @@ The data used in this project comes from the following sources below:
 | clean_fire_data.csv.zip  | Modeling.ipynb   | Modeling.ipynb   ||
 | fire_elevation.csv  | Modeling.ipynb   | Modeling.ipynb   |Elevation of each fire incident|
 | fire_model_data.csv  | Modeling.ipynb   | Modeling.ipynb   |Final dataset used to Model, drop unwanted columns before modeling|
+##
 ### Final Features
   - FireMgmtComplexity: The highest management level utilized to manage a wildland fire
   -
