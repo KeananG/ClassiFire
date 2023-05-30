@@ -80,17 +80,16 @@ The data used in this project comes from the following sources below:
 Below are the key features used in this project. Several features in the dataset have corresponding features that contained the same or similar data. These features were utilized to fill in missing values whenever possible.
 #### Fire Incidents:
 Definitions provided by source
-  - **FireMgmtComplexity:** The highest management level utilized to manage a wildland fire
-  
-  - **FinalAcres:** Final burn acres, nulls filled in with IncidentSize
-  
-  - **site:** Created in Modeling.ipynb, closest RAWS that has at least 50% data coverage over the duration of a fire incident. 
-    -  It is used as a reference point for analyzing weather conditions during the fire event.
-  -  **DispatchCenterID:** A unique identifier for a dispatch center responsible for supporting the incident. Nulls filled in with POODispatchCenterID
-  -  **POODispatchCenterID:** A unique identifier for the dispatch center that intersects with the incident point of origin (point where fire incident occured)
-  - **POOJurisdictionalAgency:** The agency having land and resource management responsibility for a fire incident as provided by federal, state or local law
-  - **POOFips:** Code identifies counties and county equivalents. The first two digits are the FIPS State code and the last three are the county code within the state.
-  - **elevation:** Elevation of fire incident (meters) 
+- **FireMgmtComplexity:** The highest management level utilized to manage a wildland fire
+
+- **FinalAcres:** Final burn acres, nulls filled in with IncidentSize
+- **site:** Created in Modeling.ipynb, closest RAWS that has at least 50% data coverage over the duration of a fire incident. 
+  -  It is used as a reference point for analyzing weather conditions during the fire event.
+-  **DispatchCenterID:** A unique identifier for a dispatch center responsible for supporting the incident. Nulls filled in with POODispatchCenterID
+-  **POODispatchCenterID:** A unique identifier for the dispatch center that intersects with the incident point of origin (point where fire incident occured)
+- **POOJurisdictionalAgency:** The agency having land and resource management responsibility for a fire incident as provided by federal, state or local law
+- **POOFips:** Code identifies counties and county equivalents. The first two digits are the FIPS State code and the last three are the county code within the state.
+- **elevation:** Elevation of fire incident (meters) 
 #### RAWS data:
 For each fire incident, all meteorological metrics were computed as averages of the fire duration.
   - **NESSID:**  NESS ID for identifying RAWS
