@@ -26,7 +26,7 @@ Fire management agencies, administrators, and other personnel responsible for al
 ---
 
 ## Data Understanding
-  - [Target](#Target-FireMgmtComplexity)
+  - [Target](#Target-FireMgmtComplexity-(Defined-below-under-[Final-Features](#final-features)))
   - [Data Sources](#data-sources)
   - [Data Directory](#data-directory)
   - [Final Features](#final-features)
