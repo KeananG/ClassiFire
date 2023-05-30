@@ -27,9 +27,9 @@ Fire management agencies, administrators, and other personnel responsible for al
   - [Data Sources](#data-sources)
   - [Data Directory](#data-directory)
   - [Final Features](#final-features)
-
+##
 ### Target
-___
+
   - FireMgmtComplexity (Defined [here](#final-features))
 ##### Factors contributing to the fire management complexity level:
   - Area involved
@@ -45,7 +45,7 @@ ___
 Source: https://gacc.nifc.gov/swcc/management_admin/Agency_Administrator/AA_Guidelines/pdf_files/ch5.pdf
 ##### FireMgmtComplexity Classes:
 The levels of wildfire fire incidents range from Type 5 to Type 1. Each level represents a specific level of complexity, with Type 5 being the lowest (local resources, 2-6 firefighters, quickly contained or low impact risk) and Type 1 being the most complex (500+ firefighters, aircraft and number other resources used, large scale). 
-
+##
 ### Data Sources
 The data used in this project comes from the following sources below:
 - Wildfire Occurrences
