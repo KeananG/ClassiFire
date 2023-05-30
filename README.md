@@ -28,8 +28,8 @@ Fire management agencies, administrators, and other personnel responsible for al
   - [Data Directory](#data-directory)
   - [Final Features](#final-features)
 
-## ### Target
-
+### Target
+___
   - FireMgmtComplexity (Defined [here](#final-features))
 ##### Factors contributing to the fire management complexity level:
   - Area involved
