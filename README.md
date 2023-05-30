@@ -108,4 +108,18 @@ Notes:
 ---
 
 ## Repo Structure
+'''
+# Repository File Structure
+├── Images (for readme, presentation)
+--------
+├── Final Presentation (pdf Presentation)
+--------
+├── eda_Notebook.ipynb
+--------
+├── Modeling_Notebook.ipynb
+--------
+├── Dataset Folder (dataset)
+--------
+└── README.md
 
+'''
