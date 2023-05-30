@@ -4,7 +4,7 @@
 
 ![WildFire Image](https://github.com/KeananG/WildFires_capstone/blob/main/mike-newbry-_AwSiaesk40-unsplash.jpg)
 ---
-## Project Overview
+# Project Overview
   The goal of this project is to develop a classification model that can predict the fire management complexity level of a wildfire. Fire management complexity represents the highest management level utilized to manage a wildland fire. This target provides valuable insights into the resources needed and the potential scale, size and impact of a fire.
 
   This classification model analyzes various features associated with the a wildfire incident, including meteorological data, bureaucratic data, and locational data. The developed classification model will enable fire management agencies to anticipate the resources required should a wildfire occur based on the location and current meteorological data. This model doesn't replace the realtime complex decision of determining fire management complexity level (like evaluating the risk to the firefighters). However this model can aid in helping predict if a new wildfire incident will be a large scale/impacting event based on the predicted fire management complexity.
@@ -22,15 +22,15 @@ Fire management agencies, administrators, and other personnel responsible for al
 
 <!-- It is important to note that the assessment of the business understanding focuses on how well the project explains its value and addresses a real-world problem, rather than evaluating the intrinsic value itself. By effectively conveying the significance of the problem and its stakeholders, the project demonstrates its relevance and practicality -->
 ---
-## Data Understanding
+# Data Understanding
   - [Target](#Target)
   - [Data Sources](#data-sources)
   - [Data Directory](#data-directory)
   - [Key Features](#key-features)
 ##
-### Target
+## Target
   - FireMgmtComplexity (Defined [here](#key-features))
-##### Factors contributing to the fire management complexity level:
+#### Factors contributing to the fire management complexity level:
   - Area involved
   - Threat to life and property
   - Political sensitivity
@@ -42,12 +42,12 @@ Fire management agencies, administrators, and other personnel responsible for al
   - Agency policy
 
 Source: https://gacc.nifc.gov/swcc/management_admin/Agency_Administrator/AA_Guidelines/pdf_files/ch5.pdf
-##### FireMgmtComplexity Classes:
+#### FireMgmtComplexity Classes:
 The levels of wildfire fire incidents range from Type 5 to Type 1. Each level represents a specific level of complexity
 - Type 5 is the lowest class: local resources, 2-6 firefighters, quickly contained or low impact risk
 - Type 1 is the highest class: 500+ firefighters, aircraft and greater access to resources, large scale and impact 
 ##
-### Data Sources
+## Data Sources
 The data used in this project comes from the following sources below:
 - Wildfire Occurrences
   - https://data-nifc.opendata.arcgis.com/datasets/nifc::wildland-fire-incident-locations/about
@@ -61,7 +61,7 @@ The data used in this project comes from the following sources below:
 - Elevation data:
   - open elevation api 
 ##
-### Data Directory 
+## Data Directory 
 | Data | Curation | Utilization | Additional Info |
 |----------|----------|----------|----------------|
 | station_list.csv    | web_scraper.ipynb    | post_request.ipynb    | RAWS 4-digit code |
@@ -76,9 +76,9 @@ The data used in this project comes from the following sources below:
 | fire_elevation.csv  | Modeling.ipynb   | Modeling.ipynb   |Elevation of each fire incident|
 | fire_model_data.csv  | Modeling.ipynb   | Modeling.ipynb   |Final dataset used to Model, drop unwanted columns before modeling|
 ##
-### Key Features
+## Key Features
 Below are the key features used in this project. Several features in the dataset have corresponding features that contained the same or similar data. These features were utilized to fill in missing values whenever possible.
-#### Fire Incidents:
+### Fire Incidents:
 Definitions provided by source
 - **FireMgmtComplexity:** The highest management level utilized to manage a wildland fire
 
@@ -90,7 +90,7 @@ Definitions provided by source
 - **POOJurisdictionalAgency:** The agency having land and resource management responsibility for a fire incident as provided by federal, state or local law
 - **POOFips:** Code identifies counties and county equivalents. The first two digits are the FIPS State code and the last three are the county code within the state.
 - **elevation:** Elevation of fire incident (meters) 
-#### RAWS data:
+### RAWS data:
 For each fire incident, all meteorological metrics were computed as averages of the fire duration.
   - **NESSID:**  NESS ID for identifying RAWS
   
@@ -107,7 +107,7 @@ For each fire incident, all meteorological metrics were computed as averages of 
   
 ---
 
-## Data Preprocessing
+# Data Preprocessing
 
 <!--
 Notes:
@@ -115,48 +115,48 @@ Notes:
 - Preprocessing Steps 
 -->
 
-### EDA - Historical RAWS Data
+## EDA - Historical RAWS Data
 
 
-### EDA - Fire Occurrences Data
+## EDA - Fire Occurrences Data
 
 
-### EDA - Final Dataset
-
-
----
-
-## Modeling
+## EDA - Final Dataset
 
 
 ---
 
-## Performance
+# Modeling
 
 
 ---
 
-## Feature Importance
+# Performance
 
 
 ---
 
-## Conclusion
+# Feature Importance
 
 
 ---
 
-## Next Steps
+# Conclusion
 
 
 ---
 
-## Contact Information
+# Next Steps
 
 
 ---
 
-## Repo Structure
+# Contact Information
+
+
+---
+
+# Repo Structure
 ```
 ├── Images (for readme, presentation)
 ├── Final Presentation (pdf Presentation)
