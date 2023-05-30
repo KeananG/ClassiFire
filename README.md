@@ -77,8 +77,8 @@ The data used in this project comes from the following sources below:
 | RAWS.csv    | Live RAWS download    | Modeling.ipynb    ||
 | stations_dates.csv.zip    | EDA1.ipynb    | Modeling.ipynb    | Row corresponds to a day, column represents a RAWS. Missing data for a RAWS on a specific day is denoted as null.|
 | RAWS_stations.csv.zip    | EDA1.ipynb    | Modeling.ipynb    |This is split up into 1,2 and 3, Use pd.concat([1,2,3], axis=1) in notebook|
-| Wildland_Fire_Incident_Locations.csv    | Wildfire Occurrences download    | Modeling.ipynb   ||
-| clean_fire_data.csv  | Modeling.ipynb   | Modeling.ipynb   ||
+| Wildland_Fire_Incident_Locations.csv.zip    | Wildfire Occurrences download    | Modeling.ipynb   ||
+| clean_fire_data.csv.zip  | Modeling.ipynb   | Modeling.ipynb   ||
 | fire_elevation.csv  | Modeling.ipynb   | Modeling.ipynb   |Elevation of each fire incident|
 | fire_model_data.csv  | Modeling.ipynb   | Modeling.ipynb   |Final dataset used to Model, drop unwanted columns before modeling|
 ### Final Features
