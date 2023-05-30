@@ -4,7 +4,7 @@
 
 ![WildFire Image](https://github.com/KeananG/WildFires_capstone/blob/main/mike-newbry-_AwSiaesk40-unsplash.jpg)
 ---
-<body style="background-color: #f0f0f0;">
+<body style="background-color: 'red';">
     <!-- Content of your HTML page -->
 
 ## Project Overview
