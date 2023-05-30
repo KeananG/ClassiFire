@@ -37,6 +37,7 @@ Fire management agencies, administrators, and other personnel responsible for al
   - Fire behavior
   - Strategy and tactics
   - Agency policy
+
 Source: https://gacc.nifc.gov/swcc/management_admin/Agency_Administrator/AA_Guidelines/pdf_files/ch5.pdf
 ##### FireMgmtComplexity classes:
 The levels of wildfire fire incidents range from Type 5 to Type 1. Each level represents a specific level of complexity, with Type 5 being the lowest (local resources, 2-6 firefighters, quickly contained or low impact risk) and Type 1 being the most complex (500+ firefighters, aircraft and number other resources used, large scale). 
