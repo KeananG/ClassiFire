@@ -27,7 +27,6 @@ Fire management agencies, administrators, and other personnel responsible for al
   - [Data Sources](#data-sources)
   - [Data Directory](#data-directory)
   - [Key Features](#key-features)
-##
 ## Target
   - FireMgmtComplexity (Defined [here](#key-features))
 #### Factors contributing to the fire management complexity level:
@@ -46,7 +45,6 @@ Source: https://gacc.nifc.gov/swcc/management_admin/Agency_Administrator/AA_Guid
 The levels of wildfire fire incidents range from Type 5 to Type 1. Each level represents a specific level of complexity
 - Type 5 is the lowest class: local resources, 2-6 firefighters, quickly contained or low impact risk
 - Type 1 is the highest class: 500+ firefighters, aircraft and greater access to resources, large scale and impact 
-##
 ## Data Sources
 The data used in this project comes from the following sources below:
 - Wildfire Occurrences
@@ -60,7 +58,6 @@ The data used in this project comes from the following sources below:
   - Contains historical data for around 3k RAWS 
 - Elevation data:
   - open elevation api 
-##
 ## Data Directory 
 | Data | Curation | Utilization | Additional Info |
 |----------|----------|----------|----------------|
@@ -75,7 +72,6 @@ The data used in this project comes from the following sources below:
 | clean_fire_data.csv.zip  | Modeling.ipynb   | Modeling.ipynb   ||
 | fire_elevation.csv  | Modeling.ipynb   | Modeling.ipynb   |Elevation of each fire incident|
 | fire_model_data.csv  | Modeling.ipynb   | Modeling.ipynb   |Final dataset used to Model, drop unwanted columns before modeling|
-##
 ## Key Features
 Below are the key features used in this project. Several features in the dataset have corresponding features that contained the same or similar data. These features were utilized to fill in missing values whenever possible.
 ### Fire Incidents:
