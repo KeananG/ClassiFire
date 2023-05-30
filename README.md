@@ -78,7 +78,7 @@ The data used in this project comes from the following sources below:
 ##
 ### Key Features
 Below are the key features used in this project. Several features in the dataset have corresponding features that contained the same or similar data. These features were utilized to fill in missing values whenever possible.
-##### Fire Incidents:
+#### Fire Incidents:
 Definitions provided by source
   - **FireMgmtComplexity:** The highest management level utilized to manage a wildland fire
   
@@ -91,7 +91,7 @@ Definitions provided by source
   - **POOJurisdictionalAgency:** The agency having land and resource management responsibility for a fire incident as provided by federal, state or local law
   - **POOFips:** Code identifies counties and county equivalents. The first two digits are the FIPS State code and the last three are the county code within the state.
   - **elevation:** Elevation of fire incident (meters) 
-##### RAWS data:
+#### RAWS data:
 For each fire incident, all meteorological metrics were computed as averages of the fire duration.
   - **NESSID:**  NESS ID for identifying RAWS
   
