@@ -85,6 +85,10 @@ Definitions provided by source
 -  **POODispatchCenterID:** A unique identifier for the dispatch center that intersects with the incident point of origin (point where fire incident occured)
 - **POOJurisdictionalAgency:** The agency having land and resource management responsibility for a fire incident as provided by federal, state or local law
 - **POOFips:** Code identifies counties and county equivalents. The first two digits are the FIPS State code and the last three are the county code within the state.
+- **FireDiscoveryDateTime:** The date and time a fire was reported as discovered or confirmed to exist
+- **FireOutDateTime:** The date and time when a fire is declared out
+- **OBJECTID:** Incident ID for dataset
+- **EstimatedFinalCost:** Nulls filled in with EstimatedCostTodate
 - **elevation:** Elevation of fire incident (meters) 
 ### RAWS data:
 For each fire incident, all meteorological metrics were computed as averages of the fire duration.
