@@ -93,17 +93,17 @@ Definitions provided by source
   - **elevation:** Elevation of fire incident (meters) 
 ##### RAWS data:
 For each fire incident, all meteorological metrics were computed as averages of the fire duration.
-  - NESSID:  NESS ID for identifying RAWS
-  - X: Longitude
-  - Y: Latitude
-  - date: date when data was collected, if null then no data collected on that day
-  - total_solar_radiation_ly: Solar radiation
-  - ave_mean_wind_speed_mph: Average wind speed (mph)
-  - ave_mean_wind_direction_deg: Average wind direction (degree)
-  - max_maximum_wind_gust_mph: Maximum wind gust (mph)
-  - ave_average_air_temperature_deg_f: Average air temperature (ºF)
-  - ave_average_relative_humidity: Average relative humidity
-  - total_precipitation_in: Total precipitation (inches)
+  - **NESSID:**  NESS ID for identifying RAWS
+  - **X:** Longitude
+  - **Y:** Latitude
+  - **date:** date when data was collected, if null then no data collected on that day
+  - **total_solar_radiation_ly:** Solar radiation
+  - **ave_mean_wind_speed_mph:** Average wind speed (mph)
+  - **ave_mean_wind_direction_deg:** Average wind direction (degree)
+  - **max_maximum_wind_gust_mph:** Maximum wind gust (mph)
+  - **ave_average_air_temperature_deg_f:** Average air temperature (ºF)
+  - **ave_average_relative_humidity:** Average relative humidity
+  - **total_precipitation_in:** Total precipitation (inches)
   
 ---
 
