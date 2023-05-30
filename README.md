@@ -45,7 +45,6 @@ The levels of wildfire fire incidents range from Type 5 to Type 1. Each level re
 Fire management complexity can be used to further evaluate if a location is at risk of being resource intensive or potentially large threat to life and property should a wildfire occur.
 
 ### Data Sets
-
 - Wildfire Occurrences
   - https://data-nifc.opendata.arcgis.com/datasets/nifc::wildland-fire-incident-locations/about
   - This dataset gets updated daily and contains data going back to roughly 2014
@@ -55,7 +54,8 @@ Fire management complexity can be used to further evaluate if a location is at r
 - Historical RAWS Data
   - https://raws.dri.edu/
   - Contains historical data for around 3k RAWS 
-
+- Elevation data:
+  - open elevation api 
 ### Final Features
   - FireMgmtComplexity: The highest management level utilized to manage a wildland fire
   -
