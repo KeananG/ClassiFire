@@ -70,18 +70,18 @@ The data used in this project comes from the following sources below:
 
 | Data | Curation | Utilization | Additional Info |
 |----------|----------|----------|
-| station_list.csv    | web_scraper.ipynb    | post_request.ipynb    |
-| threshold_year.pickle    | web_scraper.ipynb   | EDA1.ipynb    
-| nessid.csv    | web_scraper.ipynb    | EDA1.ipynb    |
-| RAWS-csv.zip  | post_request.ipynb    | EDA1.ipynb    |
-| RAWS-json.zip    | post_request.ipynb   | EDA1.ipynb    |
-| RAWS.csv    | Live RAWS download    | Modeling.ipynb    |
+| station_list.csv    | web_scraper.ipynb    | post_request.ipynb    | |
+| threshold_year.pickle    | web_scraper.ipynb   | EDA1.ipynb    | |
+| nessid.csv    | web_scraper.ipynb    | EDA1.ipynb    | |
+| RAWS-csv.zip  | post_request.ipynb    | EDA1.ipynb    | |
+| RAWS-json.zip    | post_request.ipynb   | EDA1.ipynb    ||
+| RAWS.csv    | Live RAWS download    | Modeling.ipynb    ||
 | stations_dates.csv.zip    | EDA1.ipynb    | Modeling.ipynb    | This is split up into 2 files, 1 and 2, pd.concat([1,2], axis=1)|
-| RAWS_stations.csv.zip    | EDA1.ipynb    | Modeling.ipynb    |
-| Wildland_Fire_Incident_Locations.csv    | Wildfire Occurrences download    | Modeling.ipynb   |
-| clean_fire_data.csv  | Modeling.ipynb   | Modeling.ipynb   |
-| fire_elevation.csv  | Modeling.ipynb   | Modeling.ipynb   |
-| fire_model_data.csv  | Modeling.ipynb   | Modeling.ipynb   |
+| RAWS_stations.csv.zip    | EDA1.ipynb    | Modeling.ipynb    ||
+| Wildland_Fire_Incident_Locations.csv    | Wildfire Occurrences download    | Modeling.ipynb   ||
+| clean_fire_data.csv  | Modeling.ipynb   | Modeling.ipynb   ||
+| fire_elevation.csv  | Modeling.ipynb   | Modeling.ipynb   ||
+| fire_model_data.csv  | Modeling.ipynb   | Modeling.ipynb   ||
 ### Final Features
   - FireMgmtComplexity: The highest management level utilized to manage a wildland fire
   -
