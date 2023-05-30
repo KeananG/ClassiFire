@@ -78,8 +78,10 @@ The data used in this project comes from the following sources below:
 | RAWS.csv    | Live RAWS download    | Modeling.ipynb    |
 | stations_dates.csv.zip    | EDA1.ipynb    | Modeling.ipynb    |
 | RAWS_stations.csv.zip    | EDA1.ipynb    | Modeling.ipynb    |
-| Row 9    | Row 9    | Row 9    |
-| Row 10   | Row 10   | Row 10   |
+| Wildland_Fire_Incident_Locations.csv    | Wildfire Occurrences download    | Modeling.ipynb   |
+| clean_fire_data.csv  | Modeling.ipynb   | Modeling.ipynb   |
+| fire_elevation.csv  | Modeling.ipynb   | Modeling.ipynb   |
+| fire_model_data.csv  | Modeling.ipynb   | Modeling.ipynb   |
 ### Final Features
   - FireMgmtComplexity: The highest management level utilized to manage a wildland fire
   -
