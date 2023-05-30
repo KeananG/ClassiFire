@@ -80,8 +80,7 @@ The data used in this project comes from the following sources below:
 | Wildland_Fire_Incident_Locations.csv    | Wildfire Occurrences download    | Modeling.ipynb   ||
 | clean_fire_data.csv  | Modeling.ipynb   | Modeling.ipynb   ||
 | fire_elevation.csv  | Modeling.ipynb   | Modeling.ipynb   |Elevation of each fire incident|
-| fire_model_data.csv  | Modeling.ipynb   | Modeling.ipynb   |Final dataset used to Model, 
-*drop unwanted columns before modeling|
+| fire_model_data.csv  | Modeling.ipynb   | Modeling.ipynb   |Final dataset used to Model,              *drop unwanted columns before modeling|
 ### Final Features
   - FireMgmtComplexity: The highest management level utilized to manage a wildland fire
   -
