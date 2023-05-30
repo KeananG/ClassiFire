@@ -70,14 +70,15 @@ The data used in this project comes from the following sources below:
 
 | Data | Curation | Utilization |
 |----------|----------|----------|
-| RAWS.csv    | Row 1    | Row 1    |
-| station_list.csv    | Row 2    | Row 2    |
-| nessid.csv    | Row 3    | Row 3    |
-| RAWS-csv.zip  | Row 4    | Row 4    |
-| RAWS-json.zip    | Row 5    | Row 5    |
-| threshold_year.pickle    | Row 6    | Row 6    |
-| Row 7    | Row 7    | Row 7    |
-| Row 8    | Row 8    | Row 8    |
+| threshold_year.pickle    | web_scraper.ipynb   | EDA1.ipynb    |
+| station_list.csv    | web_scraper.ipynb    | post_request.ipynb    |
+| nessid.csv    | web_scraper.ipynb    | EDA1.ipynb    |
+| RAWS-csv.zip  | post_request.ipynb    | EDA1.ipynb    |
+| RAWS-json.zip    | post_request.ipynb   | EDA1.ipynb    |
+
+| RAWS.csv    | N/A    | Modeling.ipynb    |
+| stations_dates.csv.zip    | EDA1.ipynb    | Modeling.ipynb    |
+| RAWS_stations.csv.zip    | EDA1.ipynb    | Modeling.ipynb    |
 | Row 9    | Row 9    | Row 9    |
 | Row 10   | Row 10   | Row 10   |
 ### Final Features
@@ -143,7 +144,7 @@ Notes:
 ├── web_scraper.ipynb
 ├── post_request.ipynb
 ├── EDA1.ipynb
-├── Modeling_Notebook.ipynb
+├── Modeling.ipynb
 ├── Dataset Folder (dataset)
 └── README.md
 ```
