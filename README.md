@@ -4,7 +4,7 @@
 
 ![WildFire Image](https://github.com/KeananG/WildFires_capstone/blob/main/mike-newbry-_AwSiaesk40-unsplash.jpg)
 ---
-<body style="background-color: '#RRGGBB';">
+<body style="background-color: #RRGGBB;">
     
 ## Project Overview
   The goal of this project is to develop a classification model that can predict the fire management complexity level of a wildfire. Fire management complexity represents the highest management level utilized to manage a wildland fire. This target provides valuable insights into the resources needed and the potential scale, size and impact of a fire.
