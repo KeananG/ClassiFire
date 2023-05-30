@@ -109,7 +109,6 @@ Notes:
 
 ## Repo Structure
 '''
-# Repository File Structure
 ├── Images (for readme, presentation)
 --------
 ├── Final Presentation (pdf Presentation)
