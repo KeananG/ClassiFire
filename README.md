@@ -75,7 +75,7 @@ The data used in this project comes from the following sources below:
 | nessid.csv    | web_scraper.ipynb    | EDA1.ipynb    |
 | RAWS-csv.zip  | post_request.ipynb    | EDA1.ipynb    |
 | RAWS-json.zip    | post_request.ipynb   | EDA1.ipynb    |
-| RAWS.csv    | N/A    | Modeling.ipynb    |
+| RAWS.csv    | Live RAWS download    | Modeling.ipynb    |
 | stations_dates.csv.zip    | EDA1.ipynb    | Modeling.ipynb    |
 | RAWS_stations.csv.zip    | EDA1.ipynb    | Modeling.ipynb    |
 | Row 9    | Row 9    | Row 9    |
