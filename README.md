@@ -1,4 +1,4 @@
-# WildFires_capstone
+# Wildfires Management Complexity Project
 
 ![WildFire Image](https://github.com/KeananG/WildFires_capstone/blob/main/mike-newbry-_AwSiaesk40-unsplash.jpg)
 ---
