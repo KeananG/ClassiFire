@@ -94,6 +94,7 @@ Definitions provided by source
 ##### RAWS data:
 For each fire incident, all meteorological metrics were computed as averages of the fire duration.
   - **NESSID:**  NESS ID for identifying RAWS
+  
   - **X:** Longitude
   - **Y:** Latitude
   - **date:** date when data was collected, if null then no data collected on that day
