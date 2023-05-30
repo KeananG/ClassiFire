@@ -26,9 +26,9 @@ Fire management agencies, administrators, and other personnel responsible for al
 ---
 
 ## Data Understanding
-  - [Target](#target))
-  - [Data Sources](#data-sources))
-  - [Data Directory](#data-directory))
+  - [Target](#target)
+  - [Data Sources](#data-sources)
+  - [Data Directory](#data-directory)
   - [Final Features](#final-features)
 ### Target: FireMgmtComplexity (Defined below under [Final Features](#final-features))
 ##### Factors contributing to the fire management complexity level:
