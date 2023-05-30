@@ -73,8 +73,8 @@ The data used in this project comes from the following sources below:
 | station_list.csv    | web_scraper.ipynb    | post_request.ipynb    | RAWS 4-digit code |
 | threshold_year.pickle    | web_scraper.ipynb   | EDA1.ipynb    | RAWS code and final year station collected data|
 | nessid.csv    | web_scraper.ipynb    | EDA1.ipynb    | NESSID and RAWS code|
-| RAWS-json.zip    | post_request.ipynb   | EDA1.ipynb    ||
-| RAWS.csv    | Live RAWS download    | Modeling.ipynb    ||
+| RAWS_Historical_Full    | post_request.ipynb   | EDA1.ipynb    |Json files split into 4 files|
+| RAWS.csv    | Live RAWS download    | Modeling.ipynb    |---|
 | stations_dates.csv.zip    | EDA1.ipynb    | Modeling.ipynb    | This is split up into 2 files, 1,2 and 3, Use pd.concat([1,2,3], axis=1) in notebook|
 | RAWS_stations.csv.zip    | EDA1.ipynb    | Modeling.ipynb    ||
 | Wildland_Fire_Incident_Locations.csv    | Wildfire Occurrences download    | Modeling.ipynb   ||
