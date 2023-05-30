@@ -81,7 +81,9 @@ Below are the key features used in this project. Several features in the dataset
 ##### Fire Incidents:
 Definitions provided by source
   - **FireMgmtComplexity:** The highest management level utilized to manage a wildland fire
+  
   - **FinalAcres:** Final burn acres, nulls filled in with IncidentSize
+  
   - **site:** Created in Modeling.ipynb, closest RAWS that has at least 50% data coverage over the duration of a fire incident. 
     -  It is used as a reference point for analyzing weather conditions during the fire event.
   -  **DispatchCenterID:** A unique identifier for a dispatch center responsible for supporting the incident. Nulls filled in with POODispatchCenterID
