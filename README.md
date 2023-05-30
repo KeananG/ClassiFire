@@ -70,8 +70,8 @@ The data used in this project comes from the following sources below:
 
 | Data | Curation | Utilization |
 |----------|----------|----------|
-| threshold_year.pickle    | web_scraper.ipynb   | EDA1.ipynb    |
 | station_list.csv    | web_scraper.ipynb    | post_request.ipynb    |
+| threshold_year.pickle    | web_scraper.ipynb   | EDA1.ipynb    
 | nessid.csv    | web_scraper.ipynb    | EDA1.ipynb    |
 | RAWS-csv.zip  | post_request.ipynb    | EDA1.ipynb    |
 | RAWS-json.zip    | post_request.ipynb   | EDA1.ipynb    |
