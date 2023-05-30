@@ -1,3 +1,52 @@
+<div class="container">
+  <style>
+    .container {
+      --color-main: #ef476f;
+      --color-primary: #ffd166;
+      --color-secondary: #06d6a0;
+      --color-tertiary: #118ab2;
+    
+      background: linear-gradient(
+        -45deg,
+        var(--color-main),
+        var(--color-primary),
+        var(--color-secondary),
+        var(--color-tertiary)
+      );
+      
+      /* Style for headings */
+      h1 {
+        color: var(--color-main);
+      }
+      
+      h2 {
+        color: var(--color-primary);
+      }
+      
+      /* Style for bold text */
+      p strong {
+        color: var(--color-tertiary);
+      }
+    }
+    
+    /* Dark mode */
+    @media (prefers-color-scheme: dark) {
+      .container {
+        --color-main: #ff0000;
+        --color-primary: #990000;
+        --color-secondary: #660000;
+        --color-tertiary: #cc0000;
+      }
+    }
+  </style>
+
+  <!-- Your content goes here -->
+</div>
+
+
+
+
+
 <!--# Wildfires Management Complexity Project-->
 <h1 align="center">Wildfires Management Complexity Project</h1>
 
