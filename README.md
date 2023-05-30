@@ -26,10 +26,10 @@ Fire management agencies, administrators, and other personnel responsible for al
   - [Target](#Target)
   - [Data Sources](#data-sources)
   - [Data Directory](#data-directory)
-  - [Final Features](#final-features)
+  - [Key Features](#key-features)
 ##
 ### Target
-  - FireMgmtComplexity (Defined [here](#final-features))
+  - FireMgmtComplexity (Defined [here](#key-features))
 ##### Factors contributing to the fire management complexity level:
   - Area involved
   - Threat to life and property
@@ -52,7 +52,7 @@ The data used in this project comes from the following sources below:
 - Wildfire Occurrences
   - https://data-nifc.opendata.arcgis.com/datasets/nifc::wildland-fire-incident-locations/about
   - This dataset gets updated daily and contains data going back to roughly 2014
-- Live RAWS Data
+- Live RAWS Data (Remote Access Weather Stations)
   - https://data-nifc.opendata.arcgis.com/datasets/nifc::public-view-interagency-remote-automatic-weather-stations-raws/about
   - Dataset of live RAWS data
 - Historical RAWS Data
@@ -76,11 +76,33 @@ The data used in this project comes from the following sources below:
 | fire_elevation.csv  | Modeling.ipynb   | Modeling.ipynb   |Elevation of each fire incident|
 | fire_model_data.csv  | Modeling.ipynb   | Modeling.ipynb   |Final dataset used to Model, drop unwanted columns before modeling|
 ##
-### Final Features
+### Key Features
+Below are the key features used in this project. Several features in the dataset have corresponding features that contained the same or similar data. These features were utilized to fill in missing values whenever possible.
+##### Fire Incidents:
+Definitions provided by source
   - FireMgmtComplexity: The highest management level utilized to manage a wildland fire
-  -
-
-
+  - FinalAcres: Final burn acres, nulls filled in with IncidentSize
+  - site: Created in Modeling.ipynb, closest RAWS that has at least 50% data coverage over the duration of a fire incident. 
+    -  It is used as a reference point for analyzing weather conditions during the fire event.
+  -  DispatchCenterID: A unique identifier for a dispatch center responsible for supporting the incident. Nulls filled in with POODispatchCenterID
+  -  POODispatchCenterID: A unique identifier for the dispatch center that intersects with the incident point of origin (point where fire incident occured)
+  - POOJurisdictionalAgency: The agency having land and resource management responsibility for a fire incident as provided by federal, state or local law
+  - POOFips: Code identifies counties and county equivalents. The first two digits are the FIPS State code and the last three are the county code within the state.
+  - elevation: Elevation of fire incident (meters) 
+##### RAWS data:
+For each fire incident, all meteorological metrics were computed as averages of the fire duration.
+  - NESSID:  NESS ID for identifying RAWS
+  - X: Longitude
+  - Y: Latitude
+  - date: date when data was collected, if null then no data collected on that day
+  - total_solar_radiation_ly: Solar radiation
+  - ave_mean_wind_speed_mph: Average wind speed (mph)
+  - ave_mean_wind_direction_deg: Average wind direction (degree)
+  - max_maximum_wind_gust_mph: Maximum wind gust (mph)
+  - ave_average_air_temperature_deg_f: Average air temperature (ºF)
+  - ave_average_relative_humidity: Average relative humidity
+  - total_precipitation_in: Total precipitation (inches)
+  
 ---
 
 ## Data Preprocessing
