@@ -58,6 +58,28 @@ The data used in this project comes from the following sources below:
   - Contains historical data for around 3k RAWS 
 - Elevation data:
   - open elevation api 
+
+### Data Directory 
+
+
+
+
+
+
+
+
+| Data | Curation | Utilization |
+|----------|----------|----------|
+| RAWS.csv    | Row 1    | Row 1    |
+| station_list.csv    | Row 2    | Row 2    |
+| nessid.csv    | Row 3    | Row 3    |
+| RAWS-csv.zip  | Row 4    | Row 4    |
+| RAWS-json.zip    | Row 5    | Row 5    |
+| threshold_year.pickle    | Row 6    | Row 6    |
+| Row 7    | Row 7    | Row 7    |
+| Row 8    | Row 8    | Row 8    |
+| Row 9    | Row 9    | Row 9    |
+| Row 10   | Row 10   | Row 10   |
 ### Final Features
   - FireMgmtComplexity: The highest management level utilized to manage a wildland fire
   -
