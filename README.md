@@ -170,7 +170,7 @@ This invloved changing -9999 values to nulls, dropping rows that are beyond each
 
 # Modeling
 A Random forest classifier, decision tree and dummy model were used
-![scores](imaages/scores.png)
+![scores](images/scores.png)
 
 ---
 
