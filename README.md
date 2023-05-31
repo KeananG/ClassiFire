@@ -160,22 +160,32 @@ Notes:
 
 
 ## EDA - Final Dataset
-
+![Fire Site Map](images/fire_site_map.png)
 
 ---
 
 # Modeling
-
+A Random forest classifier, decision tree and dummy model were used
+![scores](imaages/scores.png)
 
 ---
 
 # Performance
+![Incident Scores](images/Incident_scores.png)
+![Target Acres Max](images/Target_Acres_max.png)
+![Target Elevation Mean](images/Target_Elevation_mean.png)
+![Target Acres Mean](images/Target_acres_mean.png)
+![Target Acres Sum](images/Target_acres_sum.png)
+![Target Cost Mean](images/Target_cost_mean.png)
+![Target Cost Sum](images/Target_cost_sum.png)
 
+![Confusion Matrix](images/matrix.png)
+![Red Confusion Matrix](images/matrix_red.png)
 
 ---
 
 # Feature Importance
-
+![Feature Importance](images/feature_importance.png)
 
 ---
 
