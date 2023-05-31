@@ -105,6 +105,8 @@ For each fire incident, all meteorological metrics were computed as averages of 
   - **ave_average_relative_humidity:** Average relative humidity
   - **total_precipitation_in:** Total precipitation (inches)
   
+  Data Set length: over 100K and the final model dataset has a length of 7731
+  RAWS: There are roughly 2252 RAWS sites with usable data, aaround 3k in total
 ---
 
 # Data Preprocessing
