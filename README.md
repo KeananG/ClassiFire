@@ -179,7 +179,6 @@ A Random forest classifier, decision tree and dummy model were used
 ![Target Cost Mean](images/Target_cost_mean.png)
 ![Target Cost Sum](images/Target_cost_sum.png)
 
-![Confusion Matrix](images/matrix.png)
 ![Red Confusion Matrix](images/matrix_red.png)
 
 ---
