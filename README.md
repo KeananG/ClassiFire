@@ -111,6 +111,7 @@ For each fire incident, all meteorological metrics were computed as averages of 
 ---
 # Project Rundown
 - All needed data is saved under data folder refer to notebook to import those datasets
+- refer to [Data Directory](#data-directory) for dataset source/curation and where its used
  1. Run model [Modeling notebook](Modeling.ipynb) up until Thiessen Polygon, this provides a general overview of the fire incident occurence
  2. Webscrape urls, nessids, and more 
  [webscrape notebook](web_scraper.ipynb)
