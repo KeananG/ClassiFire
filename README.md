@@ -4,7 +4,7 @@
 $${\color{red}tester}$$
 
 
-
+<hide>
 ```diff
 - text in red
 + text in green
@@ -12,8 +12,7 @@ $${\color{red}tester}$$
 # text in gray
 @@ text in purple [REDACTED]  (and bold)@@
 ```
-- diff test
-
+</hide>
 ![WildFire Image](https://github.com/KeananG/WildFires_capstone/blob/main/mike-newbry-_AwSiaesk40-unsplash.jpg)
 ---
 # Project Overview
