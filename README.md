@@ -154,14 +154,18 @@ Notes:
 -->
 
 ## EDA - Historical RAWS Data
-
-
+This invloved changing -9999 values to nulls, dropping rows that are beyond each stations data collecting time period, creating dataframe where eaach column is a RAWS and row inputs are days, if data doesn't exist for that date then a null is placed, 
+- changing from the 4 digit code used with post request to the NESSID 
+- fix datetimes columns
 ## EDA - Fire Occurrences Data
-
-
+- Dropping duplicates
+- remove days where end date was before the start date and other irregularities, set to only use points within the contiguous USA
+- fix datetimes columns
 ## EDA - Final Dataset
 ![Fire Site Map](images/fire_site_map.png)
-
+- generate the mean meteorological metrics for each fire
+- drop nulls
+- fix datetimes columns
 ---
 
 # Modeling
