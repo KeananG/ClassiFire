@@ -172,13 +172,13 @@ Looking at the next steps, I am looking to further improve model performance by 
 
 # Contact Information
 
-##Email:  
+## Email:  
 ginell_k1@denison.edu
 
-##Github: 
+## Github: 
 github.com/KeananG
 
-##Linkedin: 
+## Linkedin: 
 https://www.linkedin.com/in/keanan-ginell
 
 ---
