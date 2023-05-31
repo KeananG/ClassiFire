@@ -244,8 +244,23 @@ https://www.linkedin.com/in/keanan-ginell
 ├── LICENSE
 ├── Modeling.ipynb
 ├── README.md
-├── mike-newbry-_AwSiaesk40-unsplash.jpg
+├── images
+│   ├── Incident_scores.png
+│   ├── Target_Acres_max.png
+│   ├── Target_Elevation_mean.png
+│   ├── Target_acres_mean.png
+│   ├── Target_acres_sum.png
+│   ├── Target_cost_mean.png
+│   ├── Target_cost_sum.png
+│   ├── feature_importance.png
+│   ├── fire_site_map.png
+│   ├── matrix.png
+│   ├── matrix_red.png
+│   ├── mike-newbry-_AwSiaesk40-unsplash.jpg
+│   ├── scores.png
+├── notebook.pdf
 ├── post_request.ipynb
+├── presentation.pdf
 ├── update_readme.py
 ├── web_scraper.ipynb
 ```
