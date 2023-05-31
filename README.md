@@ -5,8 +5,14 @@ $${\color{red}tester}$$
 
 
 
-
-
+```
+- text in red
++ text in green
+! text in orange
+# text in gray
+@@ text in purple [REDACTED]  (and bold)@@
+```
+- test
 
 ![WildFire Image](https://github.com/KeananG/WildFires_capstone/blob/main/mike-newbry-_AwSiaesk40-unsplash.jpg)
 ---
