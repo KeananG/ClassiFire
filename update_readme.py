@@ -23,29 +23,26 @@ def generate_directory_tree(path, indent=''):
     
     return tree
 
-# Specify the path to the root directory of your project
+# path to root directory
 root_directory = '.'
 
-# Generate the directory tree
+# directory tree
 directory_tree = generate_directory_tree(root_directory)
 
-# Print the directory tree
 print(directory_tree)
 
-# Read the current README.md file
 with open('README.md', 'r') as readme_file:
     readme_content = readme_file.read()
 
-# Find the section to update in the README.md file
+# update in the README.md file, looks for ''' ''' section
 start_tag = '```'
 end_tag = '```'
 start_index = readme_content.find(start_tag)
 end_index = readme_content.find(end_tag, start_index + len(start_tag))
 
-# Replace the old directory structure with the updated one
+# update repostructure
 updated_readme_content = readme_content[:start_index + len(start_tag)] + '\n' + directory_tree + readme_content[end_index:]
 
-# Write the updated content back to the README.md file
 with open('README.md', 'w') as readme_file:
     readme_file.write(updated_readme_content)
 
