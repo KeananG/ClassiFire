@@ -107,8 +107,20 @@ For each fire incident, all meteorological metrics were computed as averages of 
   
   Data Set length: over 250K and the final model dataset has a length of 7731
   RAWS: There are roughly 2252 RAWS sites with usable data, aaround 3k in total
+  
 ---
+# Project Rundown
+- All needed data is saved under data folder refer to notebook to import those datasets
+ 1. Run model [Modeling notebook](Modeling.ipynb) up until Thiessen Polygon, this provides a general overview of the fire incident occurence
+ 2. Webscrape urls, nessids, and more 
+ [webscrape notebook](web_scraper.ipynb)
+ 3. Mimics post request to pull RAWS historial data from 2014-2023 
+ [post request notebook](post_request.ipynb)
+ 4. Load in RAWS json files, create 2 dataframes for further EDA and cleaning, generic clean performed to reduce datasize 
+  [EDA1 notebook](Modeling.ipynb) I
+ 5. Continue with [Modeling notebook](Modeling.ipynb) Further EDA, generates meteorological attributes for each fire, modeling, and evalutaion, This is the main notebook 
 
+--- 
 # Data Preprocessing
 
 <!--
