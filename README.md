@@ -166,11 +166,20 @@ If a fire incident is 1 day old it is likely still at type 5, this model will be
 
 # Next Steps
 
+Looking at the next steps, I am looking to further improve model performance by adding additional features such as calculating drought data, remoteness index, and improving RAWS site selection. After this, I am looking to build a streamlit deployment of the model. This will involve setting up APIs and pulling current RAWS data, and potentially forecasted Meteorological data.
 
 ---
 
 # Contact Information
 
+Email:  
+ginell_k1@denison.edu
+
+Github: 
+github.com/KeananG
+
+Linkedin: 
+https://www.linkedin.com/in/keanan-ginell
 
 ---
 
