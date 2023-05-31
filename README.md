@@ -14,7 +14,7 @@
 
 <!--In this section, explore the business understanding of the project, focusing on the value it provides and the real-world problem it addresses. The business understanding assesses how well the project explains the significance of the problem and its stakeholders.-->
 
-Wildfires pose a significant risks to life, property, and the environment. Effective fire management is crucial for mitigating these risks and minimizing the impact of wildfires. Predicted fire management complexity level evaluates if a location is at risk of being resource intensive or potentially large threat to life and property should a wildfire occur. This can help identify regions that need to be on high alert and preparedness to minimize the impact of a wildfire.
+Wildfires pose significant risks to life, property, and the environment. Effective fire management is crucial for mitigating these risks and minimizing the impact of wildfires. Predicted fire management complexity level evaluates if a location is at risk of being resource intensive or potentially large threat to life and property should a wildfire occur. This can help identify regions that need to be on high alert and preparedness to minimize the impact of a wildfire.
 
 The fire agencies administrator is responsible for setting the fire managment complexity level. Their decision follows a set of standarized and subjective guidelines. Some of these guidelines are utilized as features in this project. 
 
@@ -43,8 +43,31 @@ Fire management agencies, administrators, and other personnel responsible for al
 Source: https://gacc.nifc.gov/swcc/management_admin/Agency_Administrator/AA_Guidelines/pdf_files/ch5.pdf
 #### FireMgmtComplexity Classes:
 The levels of wildfire fire incidents range from Type 5 to Type 1. Each level represents a specific level of complexity
-- Type 5 is the lowest class: local resources, 2-6 firefighters, quickly contained or low impact risk
-- Type 1 is the highest class: 500+ firefighters, aircraft and greater access to resources, large scale and impact 
+- Type 5:
+  - lowest class
+  - local resources 
+  - 2-6 firefighters
+  - quickly contained
+  - low impact risk
+- Type 4
+  - Local resources
+  - low impact risk
+  - slight increase in scale compared to Type 5
+- Type 3
+  - Mix of local and regional resources used
+  - increased scale and risk
+  - action plan created
+- Type 2
+  - large scale 200+ firefighters
+  - Many units required
+  - regular planning and briefing
+- Type 1 
+  - highest class
+  - Same characteristics of type 2 incident
+  - 500+ firefighters
+  - aircraft and aviation is used
+  - Greater access to resources
+  - larger scale and impact 
 ## Data Sources
 The data used in this project comes from the following sources below:
 - Wildfire Occurrences
@@ -105,8 +128,23 @@ For each fire incident, all meteorological metrics were computed as averages of 
   - **ave_average_relative_humidity:** Average relative humidity
   - **total_precipitation_in:** Total precipitation (inches)
   
+  Data Set length: over 250K and the final model dataset has a length of 7731
+  RAWS: There are roughly 2252 RAWS sites with usable data, aaround 3k in total
+  
 ---
+# Project Rundown
+- All needed data is saved under data folder refer to each notebook to import those datasets
+- refer to [Data Directory](#data-directory) for dataset source/curation and where its used.
+ 1. Run model [Modeling notebook](Modeling.ipynb) up until Thiessen Polygon, this provides a general overview of the fire incident occurences and features
+ 2. Webscrape urls, nessids, RAWS code, and more 
+ [webscrape notebook](web_scraper.ipynb)
+ 3. Mimics post request to pull RAWS historial data from 2014-2023 
+ [post request notebook](post_request.ipynb)
+ 4. Load in RAWS json files, creates 2 dataframes for further EDA and cleaning, a simple data cleaning is performed to reduce datasize 
+[EDA1 notebook](Modeling.ipynb) I
+ 5. Continue with [Modeling notebook](Modeling.ipynb) Further EDA, generates meteorological attributes for each fire, modeling, and evalutaion, This is the main notebook 
 
+--- 
 # Data Preprocessing
 
 <!--
@@ -143,16 +181,41 @@ Notes:
 
 # Conclusion
 
+### The final model scores: 
+|Complexity level  | precision | recall | f1-score | support |
+|----------------|-----------|--------|----------|---------|
+| Type 1 Incident |   0.75    |  0.60  |   0.67   |    10   |
+| Type 2 Incident |   0.11    |  0.08  |   0.10   |    12   |
+| Type 3 Incident |   0.39    |  0.25  |   0.30   |   124   |
+| Type 4 Incident |   0.65    |  0.81  |   0.72   |   467   |
+| Type 5 Incident |   0.96    |  0.91  |   0.94   |   1320  |
+| accuracy       |           |        |   0.84   |   1933  |
+| macro avg      |   0.57    |  0.53  |   0.54   |   1933  |
+| weighted avg   |   0.84    |  0.84  |   0.84   |   1933  |
+
+
+The final model performs best at predicting type 5 incidents, even though I used smote, the majority of wildfires occur at the type 5 incident. This means that most fires are put out within a few days and or only require a few firefighters.
+Type 4 incident is one level up and type 1 incidents have the next best performance. With type 2 and 3 performing poorly. Looking at the usability of this model it is more significant to be able to predict both extremes well. 
+If a fire incident is 1 day old it is likely still at type 5, this model will be able to use current and forecasted meteorological data, and bureaucratic features such as agency and dispatch center to predict the fire incidents fire complexity level. Further evaluation shows that the highest mean acres burned and economic cost correlate with type 1 incidents, This for one confirms that fire complexity levels do correlate with fire scale and impact. However, this is not absolute, when evaluating the max acres burned for each level types 1, 3, and 5 all share close max acres burned. This could be an error in the data or Possibly more underlying factors influencing the fire complexity level. One speculation is that large fires occurring in heavily remote regions are less of a risk to people and communities. Further analysis also shows that type 4 incidents have the largest cumulative acres burned and economic costs. This is likely due to just the class imbalance as the mean shows that type 1 incidents are significantly higher in both features.
 
 ---
 
 # Next Steps
 
+Looking at the next steps, I am looking to further improve model performance by adding additional features such as calculating drought data, remoteness index, and improving RAWS site selection. After this, I am looking to build a streamlit deployment of the model. This will involve setting up APIs and pulling current RAWS data, and potentially forecasted Meteorological data.
 
 ---
 
 # Contact Information
 
+## Email:  
+ginell_k1@denison.edu
+
+## Github: 
+[github.com/KeananG](https://github.com/KeananG/)
+
+## Linkedin: 
+https://www.linkedin.com/in/keanan-ginell
 
 ---
 
