@@ -2,14 +2,7 @@
 <h1 align="center">Wildfires Management Complexity Project</h1>
 
 
-```diff
-- text in red
-+ text in green
-! text in orange
-# text in gray
-@@ text in purple (and bold)@@
-```
-@@ test text @@
+
 ![WildFire Image](https://github.com/KeananG/WildFires_capstone/blob/main/mike-newbry-_AwSiaesk40-unsplash.jpg)
 ---
 # Project Overview
