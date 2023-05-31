@@ -176,7 +176,7 @@ Looking at the next steps, I am looking to further improve model performance by 
 ginell_k1@denison.edu
 
 ## Github: 
-github.com/KeananG
+[github.com/KeananG](https://github.com/KeananG/)
 
 ## Linkedin: 
 https://www.linkedin.com/in/keanan-ginell
