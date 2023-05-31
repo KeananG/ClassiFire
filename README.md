@@ -112,13 +112,13 @@ For each fire incident, all meteorological metrics were computed as averages of 
 # Project Rundown
 - All needed data is saved under data folder refer to notebook to import those datasets
 - refer to [Data Directory](#data-directory) for dataset source/curation and where its used
- 1. Run model [Modeling notebook](Modeling.ipynb) up until Thiessen Polygon, this provides a general overview of the fire incident occurence
- 2. Webscrape urls, nessids, and more 
+ 1. Run model [Modeling notebook](Modeling.ipynb) up until Thiessen Polygon, this provides a general overview of the fire incident occurences and features
+ 2. Webscrape urls, nessids, RAWS code, and more 
  [webscrape notebook](web_scraper.ipynb)
  3. Mimics post request to pull RAWS historial data from 2014-2023 
  [post request notebook](post_request.ipynb)
- 4. Load in RAWS json files, create 2 dataframes for further EDA and cleaning, generic clean performed to reduce datasize 
-  [EDA1 notebook](Modeling.ipynb) I
+ 4. Load in RAWS json files, creates 2 dataframes for further EDA and cleaning, a simple data cleaning is performed to reduce datasize 
+[EDA1 notebook](Modeling.ipynb) I
  5. Continue with [Modeling notebook](Modeling.ipynb) Further EDA, generates meteorological attributes for each fire, modeling, and evalutaion, This is the main notebook 
 
 --- 
