@@ -1,5 +1,5 @@
 <!--# Wildfires Management Complexity Project-->
-<h1 align="center">Wildfires Management Complexity Projec</h1>
+<h1 align="center">Wildfires Management Complexity Project</h1>
 
 ![WildFire Image](https://github.com/KeananG/WildFires_capstone/blob/main/mike-newbry-_AwSiaesk40-unsplash.jpg)
 ---
