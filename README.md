@@ -158,12 +158,31 @@ Notes:
 
 # Repo Structure
 ```
-├── Images (for readme, presentation)
-├── Final Presentation (pdf Presentation)
-├── web_scraper.ipynb
-├── post_request.ipynb
+├── .gitignore
+├── Data
+│   ├── RAWS.csv
+│   ├── RAWS_Historical_Full
+│   │   ├── set1.zip
+│   │   ├── set2.zip
+│   │   ├── set3.zip
+│   │   ├── set4.zip
+│   ├── RAWS_stations1.csv.zip
+│   ├── RAWS_stations2.csv.zip
+│   ├── RAWS_stations3.csv.zip
+│   ├── Wildland_Fire_Incident_Locations.csv.zip
+│   ├── clean_fire_data.csv.zip
+│   ├── fire_elevation.csv
+│   ├── fire_model_data.csv
+│   ├── nessid.csv
+│   ├── station_list.csv
+│   ├── stations_dates.csv.zip
+│   ├── threshold_year.pickle
 ├── EDA1.ipynb
+├── LICENSE
 ├── Modeling.ipynb
-├── Dataset Folder (dataset)
-└── README.md
+├── README.md
+├── mike-newbry-_AwSiaesk40-unsplash.jpg
+├── post_request.ipynb
+├── update_readme.py
+├── web_scraper.ipynb
 ```
