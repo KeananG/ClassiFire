@@ -259,10 +259,14 @@ https://www.linkedin.com/in/keanan-ginell
 │   ├── stations_dates.csv.zip
 │   ├── threshold_year.pickle
 ├── EDA1.ipynb
+├── Github.pdf
 ├── LICENSE
 ├── Modeling.ipynb
 ├── README.md
+├── environment.yml
+├── heatmap.ipynb
 ├── images
+│   ├── Heat_map.html
 │   ├── Incident_scores.png
 │   ├── Target_Acres_max.png
 │   ├── Target_Elevation_mean.png
@@ -276,6 +280,7 @@ https://www.linkedin.com/in/keanan-ginell
 │   ├── matrix_red.png
 │   ├── mike-newbry-_AwSiaesk40-unsplash.jpg
 │   ├── scores.png
+├── index.md
 ├── notebook.pdf
 ├── post_request.ipynb
 ├── presentation.pdf
