@@ -162,10 +162,13 @@ This invloved changing -9999 values to nulls, dropping rows that are beyond each
 - remove days where end date was before the start date and other irregularities, set to only use points within the contiguous USA
 - fix datetimes columns
 ## EDA - Final Dataset
-![Fire Site Map](images/fire_site_map.png)
 - generate the mean meteorological metrics for each fire
 - drop nulls
 - fix datetimes columns
+
+![Fire Site Map](images/fire_site_map.png)
+The map illustrates the spatial relationship between the fire incidents utilized in ClassiFire and the corresponding remote access weather station (RAWS) from which meteorological attributes are obtained. The red lines on the map depict the fires that are among the top 1% farthest from the RAWS sites. The red shading serves to highlight their significant distance from the respective RAWS.
+
 ---
 
 # Modeling
