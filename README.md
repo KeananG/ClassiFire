@@ -176,12 +176,6 @@ A Random forest classifier, decision tree and dummy model were used
 
 # Performance
 ![Incident Scores](images/Incident_scores.png)
-![Target Acres Max](images/Target_Acres_max.png)
-![Target Elevation Mean](images/Target_Elevation_mean.png)
-![Target Acres Mean](images/Target_acres_mean.png)
-![Target Acres Sum](images/Target_acres_sum.png)
-![Target Cost Mean](images/Target_cost_mean.png)
-![Target Cost Sum](images/Target_cost_sum.png)
 
 ![Red Confusion Matrix](images/matrix_red.png)
 
@@ -210,6 +204,13 @@ A Random forest classifier, decision tree and dummy model were used
 The final model performs best at predicting type 5 incidents, even though I used smote, the majority of wildfires occur at the type 5 incident. This means that most fires are put out within a few days and or only require a few firefighters.
 Type 4 incident is one level up and type 1 incidents have the next best performance. With type 2 and 3 performing poorly. Looking at the usability of this model it is more significant to be able to predict both extremes well. 
 If a fire incident is 1 day old it is likely still at type 5, this model will be able to use current and forecasted meteorological data, and bureaucratic features such as agency and dispatch center to predict the fire incidents fire complexity level. Further evaluation shows that the highest mean acres burned and economic cost correlate with type 1 incidents, This for one confirms that fire complexity levels do correlate with fire scale and impact. However, this is not absolute, when evaluating the max acres burned for each level types 1, 3, and 5 all share close max acres burned. This could be an error in the data or Possibly more underlying factors influencing the fire complexity level. One speculation is that large fires occurring in heavily remote regions are less of a risk to people and communities. Further analysis also shows that type 4 incidents have the largest cumulative acres burned and economic costs. This is likely due to just the class imbalance as the mean shows that type 1 incidents are significantly higher in both features.
+
+![Target Acres Max](images/Target_Acres_max.png)
+![Target Elevation Mean](images/Target_Elevation_mean.png)
+![Target Acres Mean](images/Target_acres_mean.png)
+![Target Acres Sum](images/Target_acres_sum.png)
+![Target Cost Mean](images/Target_cost_mean.png)
+![Target Cost Sum](images/Target_cost_sum.png)
 
 ### Heat Map Over Time 
 
