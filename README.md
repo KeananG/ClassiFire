@@ -1,8 +1,8 @@
-<!--# Wildfires Management Complexity Project-->
+<!--#Wildfires Management Complexity Project-->
+<h1 align="center">ClassiFires</h1>
 <h1 align="center">Wildfires Management Complexity Project</h1>
 
-
-![WildFire Image](https://github.com/KeananG/WildFires_capstone/blob/main/mike-newbry-_AwSiaesk40-unsplash.jpg)
+![WildFire Image](https://github.com/KeananG/WildFires_capstone/blob/main/images/mike-newbry-_AwSiaesk40-unsplash.jpg)
 ---
 # Project Overview
   The goal of this project is to develop a classification model that can predict the fire management complexity level of a wildfire. Fire management complexity represents the highest management level utilized to manage a wildland fire. This target provides valuable insights into the resources needed and the potential scale, size and impact of a fire.
@@ -154,28 +154,41 @@ Notes:
 -->
 
 ## EDA - Historical RAWS Data
-
-
+This invloved changing -9999 values to nulls, dropping rows that are beyond each stations data collecting time period, creating dataframe where eaach column is a RAWS and row inputs are days, if data doesn't exist for that date then a null is placed, 
+- changing from the 4 digit code used with post request to the NESSID 
+- fix datetimes columns
 ## EDA - Fire Occurrences Data
-
-
+- Dropping duplicates
+- remove days where end date was before the start date and other irregularities, set to only use points within the contiguous USA
+- fix datetimes columns
 ## EDA - Final Dataset
-
-
+![Fire Site Map](images/fire_site_map.png)
+- generate the mean meteorological metrics for each fire
+- drop nulls
+- fix datetimes columns
 ---
 
 # Modeling
-
+A Random forest classifier, decision tree and dummy model were used
+![scores](images/scores.png)
 
 ---
 
 # Performance
+![Incident Scores](images/Incident_scores.png)
+![Target Acres Max](images/Target_Acres_max.png)
+![Target Elevation Mean](images/Target_Elevation_mean.png)
+![Target Acres Mean](images/Target_acres_mean.png)
+![Target Acres Sum](images/Target_acres_sum.png)
+![Target Cost Mean](images/Target_cost_mean.png)
+![Target Cost Sum](images/Target_cost_sum.png)
 
+![Red Confusion Matrix](images/matrix_red.png)
 
 ---
 
 # Feature Importance
-
+![Feature Importance](images/feature_importance.png)
 
 ---
 
