@@ -242,6 +242,8 @@ https://www.linkedin.com/in/keanan-ginell
 # Repo Structure
 ```
 ├── .gitignore
+├── ClassiFire.ipynb
+├── ClassiFire_presentation.pdf
 ├── Data
 │   ├── RAWS.csv
 │   ├── RAWS_Historical_Full
@@ -261,9 +263,7 @@ https://www.linkedin.com/in/keanan-ginell
 │   ├── stations_dates.csv.zip
 │   ├── threshold_year.pickle
 ├── EDA1.ipynb
-├── Github.pdf
 ├── LICENSE
-├── Modeling.ipynb
 ├── README.md
 ├── environment.yml
 ├── heatmap.ipynb
@@ -285,7 +285,6 @@ https://www.linkedin.com/in/keanan-ginell
 ├── index.md
 ├── notebook.pdf
 ├── post_request.ipynb
-├── presentation.pdf
 ├── update_readme.py
 ├── web_scraper.ipynb
 ```
