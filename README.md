@@ -165,7 +165,7 @@ Notes:
 - Dropped fires where end date was before the start date and other irregularities 
 - Only used fires that occured within the contiguous USA
 - fixed datetimes columns
-- Filled in nulls with values from correlating features when possible 
+- Filled in nulls with values from corresponding features when possible 
 ## Final Dataset
 - Calculated the mean meteorological metrics for each fire
 - Dropped nulls
