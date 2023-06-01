@@ -42,7 +42,8 @@ Fire management agencies, administrators, and other personnel responsible for al
 
 Source: https://gacc.nifc.gov/swcc/management_admin/Agency_Administrator/AA_Guidelines/pdf_files/ch5.pdf
 #### FireMgmtComplexity Classes:
-The levels of wildfire fire incidents range from Type 5 to Type 1. Each level represents a specific level of complexity
+The levels of wildfire fire incidents range from Type 5 to Type 1. Each level represents a specific level of complexity. 
+Roughly 91% of fires are incident types 5 or type 4.
 - Type 5:
   - lowest class
   - local resources 
@@ -146,25 +147,30 @@ For each fire incident, all meteorological metrics were computed as averages of 
 
 --- 
 # Data Preprocessing
-
+- Rough synopsis of the data preprocessing invloved for each data set
 <!--
 Notes:
 - Data Storage
 - Preprocessing Steps 
 -->
-
-## EDA - Historical RAWS Data
-This invloved changing -9999 values to nulls, dropping rows that are beyond each stations data collecting time period, creating dataframe where eaach column is a RAWS and row inputs are days, if data doesn't exist for that date then a null is placed, 
-- changing from the 4 digit code used with post request to the NESSID 
-- fix datetimes columns
-## EDA - Fire Occurrences Data
+## Historical RAWS Data
+- Changed -9999 values to nulls
+- Dropped rows that are beyond each stations data collecting time period
+- Created dataframes where each column is a RAWS and row inputs are days, if data doesn't exist for that date then a null is placed, 
+- Changed the 4 digit code used generating the post request to the stations NESS ID 
+- fixed datetimes columns
+- Removed RAWS that contained no data from 2014 to 2023
+## Fire Occurrences Data
 - Dropping duplicates
-- remove days where end date was before the start date and other irregularities, set to only use points within the contiguous USA
-- fix datetimes columns
-## EDA - Final Dataset
-- generate the mean meteorological metrics for each fire
-- drop nulls
-- fix datetimes columns
+- Dropped fires where end date was before the start date and other irregularities 
+- Only used fires that occured within the contiguous USA
+- fixed datetimes columns
+- Filled in nulls with values from correlating features when possible 
+## Final Dataset
+- Calculated the mean meteorological metrics for each fire
+- Dropped nulls
+- fixed datetimes columns
+- Created dataseet with only the key features
 
 ![Fire Site Map](images/fire_site_map.png)
 The map illustrates the spatial relationship between the fire incidents utilized in ClassiFire and the corresponding remote access weather station (RAWS) from which meteorological attributes are obtained. The red lines on the map depict the fires that are among the top 1% farthest from the RAWS sites. The red shading serves to highlight their significant distance from the respective RAWS.
