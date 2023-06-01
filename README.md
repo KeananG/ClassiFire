@@ -1,3 +1,11 @@
+<style>
+    .image-container {
+        background-color: white;
+        padding: 10px; /* optional, adds padding around the image */
+        display: inline-block; /* optional, allows multiple images to be displayed side by side */
+    }
+</style>
+
 <!--#Wildfires Management Complexity Project-->
 <h1 align="center">ClassiFires</h1>
 <h1 align="center">Wildfires Management Complexity Project</h1>
