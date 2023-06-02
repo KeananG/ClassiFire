@@ -55,11 +55,12 @@
         }
       </style>
       <div class="container">
-        <img src="https://keanang.github.io/WildFires_capstone/images/feature_importance.png" alt="Feature Importance" /><div class="his"></div>
+        <svg width="300" height="150">
+          <image xlink:href="images/feature_importance.png" width="300" height="150" />
+        </svg>
+        <div class="his"></div>
       </div>
     </div>
   </foreignObject>
 </svg>
-
-
 
