@@ -54,7 +54,7 @@
   </style>
   <rect width="100%" height="100%" fill="none" />
   <svg xmlns:xlink="http://www.w3.org/1999/xlink" width="100%" height="100%">
-    <image xlink:href="https://keanang.github.io/WildFires_capstone/images/feature_importance.png" width="100%" height="100%" />
+    <image xlink:href="./images/feature_importance.png" width="100%" height="100%" />
   </svg>
   <div class="container">
     <div class="his"></div>
