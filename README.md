@@ -293,6 +293,17 @@ https://www.linkedin.com/in/keanan-ginell
 │   ├── matrix_red.png
 │   ├── mike-newbry-_AwSiaesk40-unsplash.jpg
 │   ├── scores.png
+│   ├── white
+│       ├── Incident_scores.png
+│       ├── Target_Acres_max.png
+│       ├── Target_Elevation_mean.png
+│       ├── Target_acres_mean.png
+│       ├── Target_acres_sum.png
+│       ├── Target_cost_mean.png
+│       ├── Target_cost_sum.png
+│       ├── feature_importance.png
+│       ├── matrix_red_w.png
+│       ├── scores.png
 ├── index.md
 ├── notebook.pdf
 ├── post_request.ipynb
