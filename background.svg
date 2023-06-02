@@ -56,7 +56,7 @@
       </style>
       <div class="container">
         <svg width="300" height="150">
-          <image xlink:href="https://keanang.github.io/WildFires_capstone/images/feature_importance.png" width="300" height="150" />
+          <iframe src="https://keanang.github.io/WildFires_capstone/images/feature_importance.png" width="700" height="600"></iframe>
         </svg>
         <div class="his"></div>
       </div>
