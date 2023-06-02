@@ -1,59 +1,64 @@
 <svg fill="none" viewBox="0 0 600 300" width="600" height="300" xmlns="http://www.w3.org/2000/svg">
-  <style>
-    @keyframes his {
-      0% { transform: rotate(0.0deg) }
-      10% { transform: rotate(14.0deg) }
-      20% { transform: rotate(-8.0deg) }
-      30% { transform: rotate(14.0deg) }
-      40% { transform: rotate(-4.0deg) }
-      50% { transform: rotate(10.0deg) }
-      60% { transform: rotate(0.0deg) }
-      100% { transform: rotate(0.0deg) }
-    }
-    @keyframes gradient {
-      0% {
-        background-position: 0% 50%;
-      }
-      50% {
-        background-position: 100% 50%;
-      }
-      100% {
-        background-position: 0% 50%;
-      }
-    }
-    .container {
-      --color-main: #ffffff;
-      --color-primary: #ffffff;
-      --color-secondary: #ffffff;
-      --color-tertiary: #ffffff;
-      width: 100%;
-      height: 300px;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      color: white;
-      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-    }
-    .his {
-      animation: his 1.5s linear -0.5s infinite;
-      display: inline-block;
-      transform-origin: 70% 70%;
-    }
-    @media (prefers-color-scheme: light) {
-      .container {
-        background: none;
-      }
-    }
-    @media (prefers-color-scheme: dark) {
-      .container {
-        background: white linear-gradient(-45deg, var(--color-main), var(--color-primary), var(--color-secondary), var(--color-tertiary));
-        background-size: 400% 400%;
-        animation: gradient 5s ease-in-out infinite;
-      }
-    }
-  </style>
-  <image xlink:href="images/feature_importance.png" x="0" y="0" width="600" height="300" />
-  <text class="his" x="50%" y="50%">Sample Text</text>
+  <foreignObject width="100%" height="100%">
+    <div xmlns="http://www.w3.org/1999/xhtml">
+      <style>
+        @keyframes his {
+          0% { transform: rotate(0.0deg) }
+          10% { transform: rotate(14.0deg) }
+          20% { transform: rotate(-8.0deg) }
+          30% { transform: rotate(14.0deg) }
+          40% { transform: rotate(-4.0deg) }
+          50% { transform: rotate(10.0deg) }
+          60% { transform: rotate(0.0deg) }
+          100% { transform: rotate(0.0deg) }
+        }
+        @keyframes gradient {
+          0% {
+            background-position: 0% 50%;
+          }
+          50% {
+            background-position: 100% 50%;
+          }
+          100% {
+            background-position: 0% 50%;
+          }
+        }
+        .container {
+          --color-main: #ffffff;
+          --color-primary: #ffffff;
+          --color-secondary: #ffffff;
+          --color-tertiary: #ffffff;
+          width: 100%;
+          height: 300px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          color: white;
+          font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+        }
+        .his {
+          animation: his 1.5s linear -0.5s infinite;
+          display: inline-block;
+          transform-origin: 70% 70%;
+        }
+        @media (prefers-color-scheme: light) {
+          .container {
+            background: none;
+          }
+        }
+        @media (prefers-color-scheme: dark) {
+          .container {
+            background: white linear-gradient(-45deg, var(--color-main), var(--color-primary), var(--color-secondary), var(--color-tertiary));
+            background-size: 400% 400%;
+            animation: gradient 5s ease-in-out infinite;
+          }
+        }
+      </style>
+      <div class="container">
+        <img src="images/feature_importance.png" alt="Feature Importance" /><div class="his"></div>
+      </div>
+    </div>
+  </foreignObject>
 </svg>
 
 
