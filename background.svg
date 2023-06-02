@@ -1,6 +1,6 @@
 <svg fill="none" viewBox="0 0 600 300" width="600" height="300" xmlns="http://www.w3.org/2000/svg">
   <foreignObject width="100%" height="100%">
-    <div xmlns="http://www.w3.org/1999/xhtml">
+    <div xmlns="http://www.w3.org/1999/xhtml" class="container">
       <style>
         @keyframes his {
           0% { transform: rotate(0.0deg) }
@@ -55,7 +55,6 @@
         }
       </style>
  </style>
-      <div xmlns="http://www.w3.org/1999/xhtml" class="container">
         <h1>
           <svg fill="none" viewBox="0 0 600 300" width="600" height="300" xmlns="http://www.w3.org/2000/svg">
             <image xlink:href="images/feature_importance.png" x="0" y="0" width="600" height="300" />
