@@ -224,6 +224,8 @@ If a fire incident is 1 day old it is likely still at type 5, this model will be
 ![Target Cost Mean](images/Target_cost_mean.png)
 ![Target Cost Sum](images/Target_cost_sum.png)
 
+![this](images/feature_importance.png)
+
 # Heat Map Over Time 
 
 18,000 of 250,000 fires occuring between 2014 - 2023 in the contiguous USA
