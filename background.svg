@@ -57,11 +57,10 @@
  </style>
         <h1>
           <svg fill="none" viewBox="0 0 600 300" width="600" height="300" xmlns="http://www.w3.org/2000/svg">
-            <image xlink:href="images/feature_importance.png" x="0" y="0" width="600" height="300" />
+            <image xlink:href="https://keanang.github.io/WildFires_capstone/images/feature_importance.png" x="0" y="0" width="600" height="300" />
           </svg>
           <div class="his"></div>
         </h1>
-     </div>
     </div>
   </foreignObject>
 </svg>
