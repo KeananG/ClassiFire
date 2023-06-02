@@ -53,9 +53,25 @@
             animation: gradient 5s ease-in-out infinite;
           }
         }
+        .iframe-container {
+          width: 100%;
+          height: 300px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        }
+
+        .iframe-container iframe {
+          width: 100%;
+          height: 100%;
+          border: none;
+        }
       </style>
       <div class="container">
-        <img src="images/feature_importance.png" alt="Feature Importance" /><div class="his"></div>
+        <div class="iframe-container">
+          <iframe src="path/to/your/html/file.html"></iframe>
+        </div>
+        <div class="his"></div>
       </div>
     </div>
   </foreignObject>
