@@ -2,10 +2,6 @@
 <h1 align="center">ClassiFires</h1>
 <h1 align="center">Wildfires Management Complexity Project</h1>
 
-<div style="width: 100%;">
-    <img src="background.svg" style="width: 100%;" alt="Click to see the source">
-</div>
-
 ![WildFire Image](https://github.com/KeananG/WildFires_capstone/blob/main/images/mike-newbry-_AwSiaesk40-unsplash.jpg)
 ---
 # Project Overview
@@ -195,7 +191,10 @@ A Random forest classifier, decision tree and dummy model were used
 ---
 
 # Feature Importance
-![Feature Importance](images/feature_importance.png)
+<div style="width: 100%;">
+    <img src=![Feature Importance](images/feature_importance.png) style="width: 100%;" alt="Click to see the source">
+</div>
+
 
 ---
 
