@@ -191,7 +191,7 @@ A Random forest classifier, decision tree and dummy model were used
 ---
 
 # Feature Importance
-![Feature Importance](image/feature_importance)
+![Feature Importance](images/feature_importance.png)
 
 
 ---
