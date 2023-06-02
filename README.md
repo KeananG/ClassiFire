@@ -1,6 +1,6 @@
 <!--#Wildfires Management Complexity Project-->
 <h1 align="center">ClassiFires</h1>
-<h1 align="center">Wildfires Management Complexity Project</h1>
+<h2 align="center">Wildfires Management Complexity Project</h2>
 
 ![WildFire Image](https://github.com/KeananG/WildFires_capstone/blob/main/images/mike-newbry-_AwSiaesk40-unsplash.jpg)
 ---
