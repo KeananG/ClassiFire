@@ -192,7 +192,7 @@ A Random forest classifier, decision tree and dummy model were used
 
 # Feature Importance
 <div style="width: 100%;">
-    <img src=![Feature Importance](images/feature_importance.png) style="width: 100%;" alt="Click to see the source">
+    <img src="images/feature_importance.png" style="width: 100%;" alt="Feature Importance">
 </div>
 
 
