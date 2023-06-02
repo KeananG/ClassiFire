@@ -72,7 +72,8 @@
             <div xmlns="http://www.w3.org/1999/xhtml">
               <!-- Your SVG code here -->
               <h1>This is a text<div class="his"></div></h1>
-              <image xlink:href="images/feature_importance.png" width="300" height="150" />
+              <!-- <image xlink:href="images/feature_importance.png" width="300" height="150" /> -->
+              <img src="images/feature_importance.png" alt="Your Image" width="300" height="150" />
             </div>
           </foreignObject>
         </svg>
