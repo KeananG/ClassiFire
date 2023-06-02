@@ -52,8 +52,14 @@
       }
     }
   </style>
-  <div class="container">
-        <h1>images/feature_importance.png<div class="his"></div></h1>
+ <rect width="100%" height="100%" fill="none" />
+  <foreignObject width="100%" height="100%">
+    <div xmlns="http://www.w3.org/1999/xhtml">
+      <div class="container">
+        <svg xmlns:xlink="http://www.w3.org/1999/xlink" width="100%" height="100%">
+          <image xlink:href="images/feature_importance.png" width="100%" height="100%" />
+        </svg>
+        <div class="his"></div>
       </div>
     </div>
   </foreignObject>
