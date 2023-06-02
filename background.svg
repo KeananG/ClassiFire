@@ -69,9 +69,7 @@
       </style>
       <div class="container">
         <div class="iframe-container">
-          <svg width="300" height="150">
-            <iframe src="https://keanang.github.io/WildFires_capstone/images/feature_importance.png" width="700" height="600"></iframe>
-           </svg>
+           <iframe src="https://keanang.github.io/WildFires_capstone/images/feature_importance.png" width="700" height="600"></iframe>
          </div>
         <div class="his"></div>
       </div>
