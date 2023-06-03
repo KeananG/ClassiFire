@@ -89,13 +89,13 @@ The data used in this project comes from the following sources below:
 | threshold_year.pickle    | web_scraper.ipynb   | EDA1.ipynb    | RAWS code and final year station collected data|
 | nessid.csv    | web_scraper.ipynb    | EDA1.ipynb    | NESSID and RAWS code|
 | RAWS_Historical_Full    | post_request.ipynb   | EDA1.ipynb    |Json files split into 4 files|
-| RAWS.csv    | Live RAWS download    | Modeling.ipynb    ||
-| stations_dates.csv.zip    | EDA1.ipynb    | Modeling.ipynb    | Row corresponds to a day, column represents a RAWS. Missing data for a RAWS on a specific day is denoted as null.|
-| RAWS_stations.csv.zip    | EDA1.ipynb    | Modeling.ipynb    |This is split up into 1,2 and 3, Use pd.concat([1,2,3], axis=1) in notebook|
-| Wildland_Fire_Incident_Locations.csv.zip    | Wildfire Occurrences download    | Modeling.ipynb   ||
-| clean_fire_data.csv.zip  | Modeling.ipynb   | Modeling.ipynb   ||
-| fire_elevation.csv  | Modeling.ipynb   | Modeling.ipynb   |Elevation of each fire incident|
-| fire_model_data.csv  | Modeling.ipynb   | Modeling.ipynb   |Final dataset used to Model, drop unwanted columns before modeling|
+| RAWS.csv    | Live RAWS download    | ClassiFire.ipynb    ||
+| stations_dates.csv.zip    | EDA1.ipynb    | ClassiFire.ipynb    | Row corresponds to a day, column represents a RAWS. Missing data for a RAWS on a specific day is denoted as null.|
+| RAWS_stations.csv.zip    | EDA1.ipynb    | ClassiFire.ipynb    |This is split up into 1,2 and 3, Use pd.concat([1,2,3], axis=1) in notebook|
+| Wildland_Fire_Incident_Locations.csv.zip    | Wildfire Occurrences download    | ClassiFire.ipynb   ||
+| clean_fire_data.csv.zip  | ClassiFire.ipynb   | ClassiFire.ipynb   ||
+| fire_elevation.csv  | ClassiFire.ipynb   | ClassiFire.ipynb   |Elevation of each fire incident|
+| fire_model_data.csv  | ClassiFire.ipynb   | ClassiFire.ipynb   |Final dataset used to Model, drop unwanted columns before modeling|
 ## Key Features
 Below are the key features used in this project. Several features in the dataset have corresponding features that contained the same or similar data. These features were utilized to fill in missing values whenever possible. There are many more features then what is listed here, refer to source websites for an indepth overview.
 ### Fire Incidents:
@@ -103,7 +103,7 @@ Definitions provided by source
 - **FireMgmtComplexity:** The highest management level utilized to manage a wildland fire
 
 - **FinalAcres:** Final burn acres, nulls filled in with IncidentSize
-- **site:** Created in Modeling.ipynb, closest RAWS that has at least 50% data coverage over the duration of a fire incident. 
+- **site:** Created in ClassiFire.ipynb, closest RAWS that has at least 50% data coverage over the duration of a fire incident. 
   -  It is used as a reference point for analyzing weather conditions during the fire event.
 -  **DispatchCenterID:** A unique identifier for a dispatch center responsible for supporting the incident. Nulls filled in with POODispatchCenterID
 -  **POODispatchCenterID:** A unique identifier for the dispatch center that intersects with the incident point of origin (point where fire incident occured)
@@ -136,14 +136,14 @@ For each fire incident, all meteorological metrics were computed as averages of 
 # Project Rundown
 - All needed data is saved under data folder refer to each notebook to import those datasets
 - refer to [Data Directory](#data-directory) for dataset source/curation and where its used.
- 1. Run model [Modeling notebook](Modeling.ipynb) up until Thiessen Polygon, this provides a general overview of the fire incident occurences and features
+ 1. Run model [ClassiFire notebook](ClassiFire.ipynb) up until Thiessen Polygon, this provides a general overview of the fire incident occurences and features
  2. Webscrape urls, nessids, RAWS code, and more 
- [webscrape notebook](web_scraper.ipynb)
+ [web scraping  notebook](web_scraper.ipynb)
  3. Mimics post request to pull RAWS historial data from 2014-2023 
  [post request notebook](post_request.ipynb)
  4. Load in RAWS json files, creates 2 dataframes for further EDA and cleaning, a simple data cleaning is performed to reduce datasize 
-[EDA1 notebook](Modeling.ipynb) I
- 5. Continue with [Modeling notebook](Modeling.ipynb) Further EDA, generates meteorological attributes for each fire, modeling, and evalutaion, This is the main notebook 
+[EDA1 notebook](EDA1.ipynb) I
+ 5. Continue with [ClassiFire notebook](ClassiFire.ipynb) Further EDA, generates meteorological attributes for each fire, modeling, and evalutaion, This is the main notebook 
 
 --- 
 # Data Preprocessing
