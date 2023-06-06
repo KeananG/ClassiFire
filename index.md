@@ -36,7 +36,7 @@
         
         The colors are weighted by fire complexity levels type 1 incidents through type 5 incidents. Type 1 will have a higher weight however majority of the red spots indicate large clusters of type 4 and type 5 incidents and not type 2 or 1 incidents.
         This only shows roughly 18k fires out of the total 250k fires</p>
-      <iframe src="https://keanang.github.io/WildFires_capstone/images/Heat_map.html" width="1000" height="1000"></iframe>
+      <iframe src="https://keanang.github.io/ClassiFire/images/Heat_map.html" width="1000" height="1000"></iframe>
     </div>
   </body>
 </html>
