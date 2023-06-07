@@ -1,32 +1,52 @@
+<!DOCTYPE html> 
 <html>
   <head>
     <meta name="google-site-verification" content="tTOcI-YmiTZ3Xuq6HQ6IcowNe2aSWRV17QnJXH0ekO8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ClassiFire</title>
     <style>
       @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;700&display=swap');
 
       body {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        height: 100vh;
         margin: 0;
         background-color: #F5F5F5; /* Light grey */
         font-family: 'Montserrat', sans-serif;
-        font-weight: 200;
+        font-weight: 100;
         color: black;
       }
 
-     
       header {
         background-color: #8B0000; /* Dark red */
-        color: black;
+        color: white;
         padding: 10px;
-        font-family: Montserrat, sans-serif;
-        font-weight: 500;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 300;
         text-align: center;
+      }
+
+      main {
+        max-width: 1000px;
+        margin: 20px auto;
+        padding: 0 20px;
+      }
+
+      p {
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 100;
+        text-align: left;
+        font-size: 18px;
+        line-height: 1.5;
+        margin-bottom: 20px;
+      }
+
+      iframe {
         width: 100%;
+        height: 700px;
+      }
+
+      footer {
+        text-align: center;
+        margin-top: 20px;
       }
     </style>
   </head>
@@ -34,18 +54,16 @@
     <header>
       <h1>Wildfires from 2014 through 2023</h1>
     </header>
-    <div>
-      <p align="center">This heat map shows Wildfires from 2014 through 2023 in the contiguous USA.</p>
-        <p align="center">The colors are weighted by fire complexity levels type 1 incidents through type 5 incidents.</p>
-      <p align="center">Type 1 will have a higher weight however majority of the red spots indicate large clusters of </p>
-      <p align="center">type 4 and type 5 incidents and not type 2 or 1 incidents.</p>
-        <p align="center">This only shows roughly 18k fires out of the total 250k fires</p>
-      <iframe src="https://keanang.github.io/ClassiFire/images/Heat_map.html" width="2000" height="1000"></iframe>
-    </div>
-    <p align="center">
+    <main>
+      <p>This heat map shows wildfires from 2014 through 2023 in the contiguous USA. The colors are weighted by fire complexity levels ranging from type 1 incidents to type 5 incidents.</p>
+      <p>Type 1 incidents have a higher weight, but the majority of the red spots indicate large clusters of type 4 and type 5 incidents rather than type 2 or 1 incidents.</p>
+      <p>This map displays roughly 18,000 fires out of the total 250,000 fires.</p>
+      <iframe src="https://keanang.github.io/ClassiFire/images/Heat_map.html"></iframe>
+    </main>
+    <footer>
       <a href="https://github.com/KeananG">
         <img src="https://img.shields.io/badge/KeananG-black?logo=github&style=flat-square&logoColor=white" alt="KeananG">
       </a>
-    </p>
+    </footer>
   </body>
 </html>
