@@ -1,4 +1,4 @@
-<!DOCTYPE html> 
+<!DOCTYPE html>
 <html>
   <head>
     <meta name="google-site-verification" content="tTOcI-YmiTZ3Xuq6HQ6IcowNe2aSWRV17QnJXH0ekO8" />
@@ -20,10 +20,59 @@
         color: white;
         padding: 10px;
         font-family: 'Montserrat', sans-serif;
-        font-weight: 300;
+        font-weight: 500;
         text-align: center;
       }
 
+      nav {
+        background-color: #333; /* Dark grey */
+        color: white;
+        padding: 8px;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 300;
+        display: flex;
+        align-items: center;
+        justify-content: space-between; 
+        text-align: center;
+      }
+
+      nav ul {  /* ul is a list */
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        align-items: center;
+      }
+  
+      nav ul li a {
+        display: block;
+        color: white;
+        padding: 14px 16px;
+        text-decoration: none;
+        text-align: left;
+      }
+
+      nav ul li a:hover {
+        background-color: #111; /* Dark grey when hovering */
+      }
+      
+      h1 {
+        color: white;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 500;
+        text-align: center;
+      }
+
+      nav h2 {
+        color: white;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 300;
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        top: 100px;
+      } 
+      
       main {
         max-width: 1000px;
         margin: 20px auto;
@@ -44,13 +93,85 @@
         height: 700px;
       }
 
+      .page {
+        display: none;
+      }
+
+      .page.active {
+        display: block;
+      }
+
       footer {
         text-align: center;
         margin-top: 20px;
       }
+      
+      .centered-text {
+        margin-left: auto;
+        margin-right: auto;
+      }
+      
+      #markdown-content h1 {
+        color: black;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 100;
+      }
+
+      #markdown-content h2 {
+        color: black; 
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 100;
+      }
     </style>
   </head>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/showdown/1.9.1/showdown.min.js"></script>
+
   <body>
+    <header>
+      <h1>ClassiFire</h1>
+    </header>
+    <nav>
+      <ul>
+        <li><a href="#" data-page-id="page1">Page 1</a></li>
+        <li><a href="#" data-page-id="page2">Page 2</a></li>
+        <li><a href="#" data-page-id="page3">Page 3</a></li>
+      </ul>
+     <!--<h2 style="margin-right: 720px;">Wildfires Management Complexity Project</h2>-->
+      <div class="centeredtext">
+      <h2>Wildfires Management Complexity Project</h2>
+      </div>
+    </nav>
+    <main>
+      <div class="page" id="page1">
+       
+        <div id="markdown-content"></div>
+          <style>
+            </style>
+          <script>
+          // Function to fetch the Markdown file
+          function fetchMarkdownFile(url) {
+            return fetch(url)
+              .then(response => response.text())
+              .catch(error => console.log(error));
+          }
+
+          // Function to convert Markdown to HTML using Showdown
+          function convertMarkdownToHTML(markdownContent) {
+            const converter = new showdown.Converter();
+            return converter.makeHtml(markdownContent);
+          }
+
+          // Fetch the Markdown file and display its content as HTML
+          fetchMarkdownFile('README.md')
+            .then(markdownContent => {
+              const htmlContent = convertMarkdownToHTML(markdownContent);
+              document.getElementById('markdown-content').innerHTML = htmlContent;
+            });
+          </script>
+      </div>
+      
+      <div class="page" id="page2">
+        <body>
     <header>
       <h1>Wildfires from 2014 through 2023</h1>
     </header>
@@ -60,10 +181,49 @@
       <p>This map displays roughly 18,000 fires out of the total 250,000 fires.</p>
       <iframe src="https://keanang.github.io/ClassiFire/images/Heat_map.html"></iframe>
     </main>
-    <footer>
-      <a href="https://github.com/KeananG">
-        <img src="https://img.shields.io/badge/KeananG-black?logo=github&style=flat-square&logoColor=white" alt="KeananG">
-      </a>
-    </footer>
+  </body>
+      </div>
+      <div class="page" id="page3">
+        <h2>Page 3</h2>
+        <p>This is the content for Page 3.</p>
+      </div>
+      <!-- Add more div elements with class "page" and unique IDs for additional pages -->
+      <footer>
+        <h3 align="center">Feel free to check out my capstone project repository or GitHub profile:</h3>
+          <a href="https://github.com/KeananG">
+           <img src="https://img.shields.io/badge/KeananG-black?logo=github&style=flat-square&logoColor=white" alt="KeananG">
+          </a>
+         <a href="https://github.com/KeananG/ClassiFire">
+          <img src="https://img.shields.io/badge/ClassiFire-black?logo=github&style=flat-square&logoColor=white" alt="ClassiFire">
+        </a>   
+      </footer>
+    </main>
+    <script>
+      function showPage(pageId) {
+        const pages = document.querySelectorAll('.page');
+        for (let i = 0; i < pages.length; i++) {
+          if (pages[i].id === pageId) {
+            pages[i].classList.add('active');
+          } else {
+            pages[i].classList.remove('active');
+          }
+        }
+      }
+
+      function handleMenuClick(event) {
+        event.preventDefault();
+        const target = event.target;
+        if (target.tagName === 'A') {
+          const pageId = target.getAttribute('data-page-id');
+          showPage(pageId);
+        }
+      }
+
+      const menu = document.querySelector('nav ul');
+      menu.addEventListener('click', handleMenuClick);
+     
+      // Setting default page to page1
+      showPage('page1');
+    </script>
   </body>
 </html>
