@@ -85,7 +85,7 @@ The data used in this project comes from the following sources below:
 - Elevation data:
   - open elevation api 
 ## Data Directory 
-| Data | Curation | Utilization | Additional Info |
+<!--| Data | Curation | Utilization | Additional Info |
 |----------|----------|----------|----------------|
 | station_list.csv    | web_scraper.ipynb    | post_request.ipynb    | RAWS 4-digit code |
 | threshold_year.pickle    | web_scraper.ipynb   | EDA1.ipynb    | RAWS code and final year station collected data|
@@ -97,7 +97,98 @@ The data used in this project comes from the following sources below:
 | Wildland_Fire_Incident_Locations.csv.zip    | Wildfire Occurrences download    | ClassiFire.ipynb   ||
 | clean_fire_data.csv.zip  | ClassiFire.ipynb   | ClassiFire.ipynb   ||
 | fire_elevation.csv  | ClassiFire.ipynb   | ClassiFire.ipynb   |Elevation of each fire incident|
-| fire_model_data.csv  | ClassiFire.ipynb   | ClassiFire.ipynb   |Final dataset used to Model, drop unwanted columns before modeling|
+| fire_model_data.csv  | ClassiFire.ipynb   | ClassiFire.ipynb   |Final dataset used to Model, drop unwanted columns before modeling|-->
+ <style>
+    table {
+      border-collapse: collapse;
+      width: 100%;
+    }
+
+    th, td {
+      border: 1px solid black;
+      padding: 8px;
+      text-align: left;
+    }
+
+    th {
+      background-color: #f2f2f2; /* Light grey */
+    }
+  </style>
+   <table>
+    <tr>
+      <th>Data</th>
+      <th>Curation</th>
+      <th>Utilization</th>
+      <th>Additional Info</th>
+    </tr>
+    <tr>
+      <td>station_list.csv</td>
+      <td>web_scraper.ipynb</td>
+      <td>post_request.ipynb</td>
+      <td>RAWS 4-digit code</td>
+    </tr>
+    <tr>
+      <td>threshold_year.pickle</td>
+      <td>web_scraper.ipynb</td>
+      <td>EDA1.ipynb</td>
+      <td>RAWS code and final year station collected data</td>
+    </tr>
+    <tr>
+      <td>nessid.csv</td>
+      <td>web_scraper.ipynb</td>
+      <td>EDA1.ipynb</td>
+      <td>NESSID and RAWS code</td>
+    </tr>
+    <tr>
+      <td>RAWS_Historical_Full</td>
+      <td>post_request.ipynb</td>
+      <td>EDA1.ipynb</td>
+      <td>Json files split into 4 files</td>
+    </tr>
+    <tr>
+      <td>RAWS.csv</td>
+      <td>Live RAWS download</td>
+      <td>Modeling.ipynb</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>stations_dates.csv.zip</td>
+      <td>EDA1.ipynb</td>
+      <td>Modeling.ipynb</td>
+      <td>Row corresponds to a day, column represents a RAWS. Missing data for a RAWS on a specific day is denoted as null.</td>
+    </tr>
+    <tr>
+      <td>RAWS_stations.csv.zip</td>
+      <td>EDA1.ipynb</td>
+      <td>Modeling.ipynb</td>
+      <td>This is split up into 1, 2, and 3. Use pd.concat([1, 2, 3], axis=1) in the notebook.</td>
+    </tr>
+    <tr>
+      <td>Wildland_Fire_Incident_Locations.csv.zip</td>
+      <td>Wildfire Occurrences download</td>
+      <td>Modeling.ipynb</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>clean_fire_data.csv.zip</td>
+      <td>Modeling.ipynb</td>
+      <td>Modeling.ipynb</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>fire_elevation.csv</td>
+      <td>Modeling.ipynb</td>
+      <td>Modeling.ipynb</td>
+      <td>Elevation of each fire incident</td>
+    </tr>
+    <tr>
+      <td>fire_model_data.csv</td>
+      <td>Modeling.ipynb</td>
+      <td>Modeling.ipynb</td>
+      <td>Final dataset used to Model, drop unwanted columns before modeling</td>
+    </tr>
+  </table>
+  
 ## Key Features
 Below are the key features used in this project. Several features in the dataset have corresponding features that contained the same or similar data. These features were utilized to fill in missing values whenever possible. There are many more features then what is listed here, refer to source websites for an indepth overview.
 ### Fire Incidents:
@@ -201,7 +292,7 @@ A Random forest classifier, decision tree and dummy model were used
 # Conclusion
 
 ### The final model scores: 
-|Complexity level  | precision | recall | f1-score | support |
+<!--|Complexity level  | precision | recall | f1-score | support |
 |----------------|-----------|--------|----------|---------|
 | Type 1 Incident |   0.75    |  0.60  |   0.67   |    10   |
 | Type 2 Incident |   0.11    |  0.08  |   0.10   |    12   |
@@ -210,7 +301,72 @@ A Random forest classifier, decision tree and dummy model were used
 | Type 5 Incident |   0.96    |  0.91  |   0.94   |   1320  |
 | accuracy       |           |        |   0.84   |   1933  |
 | macro avg      |   0.57    |  0.53  |   0.54   |   1933  |
-| weighted avg   |   0.84    |  0.84  |   0.84   |   1933  |
+| weighted avg   |   0.84    |  0.84  |   0.84   |   1933  |-->
+<table>
+  <tr>
+    <th>Complexity level</th>
+    <th>precision</th>
+    <th>recall</th>
+    <th>f1-score</th>
+    <th>support</th>
+  </tr>
+  <tr>
+    <td>Type 1 Incident</td>
+    <td>0.75</td>
+    <td>0.60</td>
+    <td>0.67</td>
+    <td>10</td>
+  </tr>
+  <tr>
+    <td>Type 2 Incident</td>
+    <td>0.11</td>
+    <td>0.08</td>
+    <td>0.10</td>
+    <td>12</td>
+  </tr>
+  <tr>
+    <td>Type 3 Incident</td>
+    <td>0.39</td>
+    <td>0.25</td>
+    <td>0.30</td>
+    <td>124</td>
+  </tr>
+  <tr>
+    <td>Type 4 Incident</td>
+    <td>0.65</td>
+    <td>0.81</td>
+    <td>0.72</td>
+    <td>467</td>
+  </tr>
+  <tr>
+    <td>Type 5 Incident</td>
+    <td>0.96</td>
+    <td>0.91</td>
+    <td>0.94</td>
+    <td>1320</td>
+  </tr>
+  <tr>
+    <td>accuracy</td>
+    <td></td>
+    <td></td>
+    <td>0.84</td>
+    <td>1933</td>
+  </tr>
+  <tr>
+    <td>macro avg</td>
+    <td>0.57</td>
+    <td>0.53</td>
+    <td>0.54</td>
+    <td>1933</td>
+  </tr>
+  <tr>
+    <td>weighted avg</td>
+    <td>0.84</td>
+    <td>0.84</td>
+    <td>0.84</td>
+    <td>1933</td>
+  </tr>
+</table>
 
 
 The final model performs best at predicting type 5 incidents, even though I used smote, the majority of wildfires occur at the type 5 incident. This means that most fires are put out within a few days and or only require a few firefighters.
