@@ -98,22 +98,6 @@ The data used in this project comes from the following sources below:
 | clean_fire_data.csv.zip  | ClassiFire.ipynb   | ClassiFire.ipynb   ||
 | fire_elevation.csv  | ClassiFire.ipynb   | ClassiFire.ipynb   |Elevation of each fire incident|
 | fire_model_data.csv  | ClassiFire.ipynb   | ClassiFire.ipynb   |Final dataset used to Model, drop unwanted columns before modeling|-->
- <style>
-    table {
-      border-collapse: collapse;
-      width: 100%;
-    }
-
-    th, td {
-      border: 1px solid black;
-      padding: 8px;
-      text-align: left;
-    }
-
-    th {
-      background-color: #f2f2f2; /* Light grey */
-    }
-  </style>
    <table>
     <tr>
       <th>Data</th>
