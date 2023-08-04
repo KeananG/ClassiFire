@@ -1,5 +1,5 @@
 <!--#Wildfires Management Complexity Project-->
-<h1 align="center">ClassiFires</h1>
+<h1 align="center">ClassiFire</h1>
 <h2 align="center">Wildfires Management Complexity Project</h2>
 
 ![WildFire Image](images/mike-newbry-_AwSiaesk40-unsplash.jpg)
