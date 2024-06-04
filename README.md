@@ -369,7 +369,7 @@ If a fire incident is 1 day old it is likely still at type 5, this model will be
 
 18,000 of 250,000 fires occuring between 2014 - 2023 in the contiguous USA
 
-[Wildfire occurrences Heat Map](https://keanang.github.io/ClassiFire/)
+[Wildfire occurrences Heat Map](https://keanang.github.io/ClassiFire/images/Heat_map.html)
 
 ---
 
