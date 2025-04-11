@@ -388,7 +388,8 @@ ginell_k1@denison.edu
 [github.com/KeananG](https://github.com/KeananG/)
 
 ## Linkedin: 
-https://www.linkedin.com/in/keanan-ginell
+[linkedin.com/in/keanan-ginell](https://www.linkedin.com/in/keanan-ginell)
+
 
 ---
 
